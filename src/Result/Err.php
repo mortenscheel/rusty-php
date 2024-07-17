@@ -1,4 +1,6 @@
-<?php /** @noinspection PhpMissingReturnTypeInspection */
+<?php
+
+/** @noinspection PhpMissingReturnTypeInspection */
 
 /** @noinspection ReturnTypeCanBeDeclaredInspection */
 
@@ -24,8 +26,9 @@ final readonly class Err implements Result
     ) {}
 
     /**
-     * @throws E
      * @return void
+     *
+     * @throws E
      */
     public function unwrap()
     {
@@ -38,6 +41,7 @@ final readonly class Err implements Result
             // @phpstan-ignore return.void, callable.void
             return $fallback();
         }
+
         // @phpstan-ignore return.void
         return $fallback;
     }

@@ -17,6 +17,7 @@ interface Option
     /**
      * @param  callable():T|T  $fallback
      * @return T
+     *
      * @throws UnwrapException
      */
     public function unwrapOr(mixed $fallback);

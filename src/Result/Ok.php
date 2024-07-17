@@ -2,7 +2,6 @@
 
 namespace Scheel\Rusty\Result;
 
-use Exception;
 use Scheel\Rusty\Option\None;
 use Scheel\Rusty\Option\Option;
 use Scheel\Rusty\Option\Some;

@@ -1,4 +1,5 @@
 <?php
+
 /** @noinspection PhpUnhandledExceptionInspection */
 
 use Scheel\Rusty\Option\None;
@@ -19,8 +20,9 @@ function toResult(?float $val = null, ?Exception $error = null): Result
         /** @var Ok<float, Exception> $option */
         $result = new Ok($val);
     } else {
-        throw new RuntimeException("val or error must be provided");
+        throw new RuntimeException('val or error must be provided');
     }
+
     return $result;
 }
 
@@ -57,9 +59,9 @@ test('err ok() is None and err() is Some', function () {
 });
 
 test('err unwrapOr() returns fallback', function () {
-   expect(
-       toResult(error: new RuntimeException())->unwrapOr(1.1)
-   )->toBe(1.1);
+    expect(
+        toResult(error: new RuntimeException())->unwrapOr(1.1)
+    )->toBe(1.1);
 });
 
 test('ok unwrapOr() ignores fallback', function () {

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.1] - 2024-07-17
+
+### 🚀 Features
+
+- *(ci)* Add CI with test runner
+
 ## [0.1.0] - 2024-07-16
 
 ### 🚀 Features

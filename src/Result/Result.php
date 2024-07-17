@@ -2,7 +2,6 @@
 
 namespace Scheel\Rusty\Result;
 
-use Scheel\Rusty\Exceptions\UnwrapException;
 use Scheel\Rusty\Option\Option;
 
 /**
@@ -15,6 +14,7 @@ interface Result
      * @return T
      *
      * @throws E
+     *
      * @phpstan-ignore throws.notThrowable
      */
     public function unwrap();
